@@ -6,5 +6,6 @@ This project implements a simple translator application using Streamlit and Open
 
 
 Example result:
+
 <img src="https://github.com/mhihsan/blog-post-code/blob/main/translator/img/empty.png" alt="image" width="300" height="auto">
 <img src="https://github.com/mhihsan/blog-post-code/blob/main/translator/img/complete.png" alt="image" width="300" height="auto">
