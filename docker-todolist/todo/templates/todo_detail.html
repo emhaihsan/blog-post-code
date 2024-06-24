@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To-Do Detail</title>
+</head>
+<body>
+    <h1>{{ todo.title }}</h1>
+    <p>{{ todo.description }}</p>
+    <p>Status: {{ todo.completed }}</p>
+    <a href="{% url 'todo_list' %}">Back to list</a>
+</body>
+</html>
