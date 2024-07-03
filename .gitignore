@@ -1,4 +1,5 @@
 .DS_Store
+.vscode
 .ipynb_checkpoints
 tes
 tes.ipynb
