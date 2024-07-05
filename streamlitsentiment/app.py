@@ -20,13 +20,13 @@ def preprocess_text(text):
     return text
 
 # Load the vectorizer and models
-vectorizer = joblib.load('model/tfidf_vectorizer.pkl')
-nb_model = joblib.load('model/naive_bayes_model.pkl')
-svm_model = joblib.load('model/svm_model.pkl')
-lr_model = joblib.load('model/logistic_regression_model.pkl')
+vectorizer = joblib.load('tfidf_vectorizer.pkl')
+nb_model = joblib.load('naive_bayes_model.pkl')
+svm_model = joblib.load('svm_model.pkl')
+lr_model = joblib.load('logistic_regression_model.pkl')
 
 # App title
-st.title("Sentiment Analysis App")
+st.title("Tweet Sentiment Analysis App")
 st.write("Enter the text you want to analyze for sentiment:")
 
 # User input text
