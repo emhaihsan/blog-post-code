@@ -46,7 +46,7 @@ lr_prediction = lr_model.predict(input_text_vect)[0]
 lr_prob = lr_model.predict_proba(input_text_vect)[0]
 
 # Menampilkan prediksi
-print(f"Teks Input: {input_text}")
+print(f"Input text: {input_text}")
 print(f"Naive Bayes: {'Positive' if nb_prediction == 1 else 'Negative'} (Confidence: {nb_prob[nb_prediction]:.2f})")
 print(f"SVM: {'Positive' if svm_prediction == 1 else 'Negative'}")
 print(f"Logistic Regression: {'Positive' if lr_prediction == 1 else 'Negative'} (Confidence: {lr_prob[lr_prediction]:.2f})")

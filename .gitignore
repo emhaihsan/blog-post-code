@@ -1,6 +1,7 @@
 .DS_Store
 .vscode
 .ipynb_checkpoints
+
 tes
 tes.ipynb
 shape_predictor_68_face_landmarks.dat
@@ -9,3 +10,7 @@ __pycache__/
 
 #project data
 sentimentanalysis/data/
+
+# virtual environment
+.venv
+myenv
