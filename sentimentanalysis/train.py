@@ -25,7 +25,7 @@ data = data.drop(columns=['ids', 'date', 'flag', 'user'])
 # Convert target to binary (0: Negative, 1: Positive)
 data['target'] = data['target'].apply(lambda x: 1 if x == 4 else 0)
 
-# Create a balanced subset of 10% of the data
+# Create a balanced subset of 5% of the data
 positive_samples = data[data['target'] == 1].sample(frac=0.05, random_state=42)
 negative_samples = data[data['target'] == 0].sample(frac=0.05, random_state=42)
 five_percent_data = pd.concat([positive_samples, negative_samples])
@@ -88,12 +88,12 @@ print("Logistic Regression Model")
 print("Accuracy:", accuracy_score(y_test, y_pred_lr))
 print("Classification Report:\n", classification_report(y_test, y_pred_lr))
 
-# Compare model performances
-models = ['Naive Bayes', 'SVM', 'Logistic Regression']
-accuracies = [accuracy_score(y_test, y_pred_nb), accuracy_score(y_test, y_pred_svm), accuracy_score(y_test, y_pred_lr)]
+# # Compare model performances using a bar chart (optional)
+# models = ['Naive Bayes', 'SVM', 'Logistic Regression']
+# accuracies = [accuracy_score(y_test, y_pred_nb), accuracy_score(y_test, y_pred_svm), accuracy_score(y_test, y_pred_lr)]
 
-plt.figure(figsize=(10, 5))
-sns.barplot(x=models, y=accuracies)
-plt.title('Comparison of Model Accuracies')
-plt.ylabel('Accuracy')
-plt.show()
+# plt.figure(figsize=(10, 5))
+# sns.barplot(x=models, y=accuracies)
+# plt.title('Comparison of Model Accuracies')
+# plt.ylabel('Accuracy')
+# plt.show()
