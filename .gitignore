@@ -16,3 +16,5 @@ sentimentanalysis/data/
 .venv
 myenv
 
+.env
+
