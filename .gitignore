@@ -18,3 +18,7 @@ myenv
 
 .env
 
+configure.py
+
+#data_folder
+audio_data/
