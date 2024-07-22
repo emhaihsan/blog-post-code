@@ -1,5 +1,4 @@
 import gradio as gr
-import os
 import assemblyai as aai
 from translate import Translator
 from elevenlabs import VoiceSettings
@@ -15,11 +14,6 @@ ASSEMBLYAI_API_KEY = config["ASSEMBLYAI_API_KEY"]
 
 
 def voice_to_voice(audio_file):
-    """
-    Transcribes audio file and processes the transcription response.
-    """
-    # transcribe audio file
-
     transcription_response = audio_transcription(audio_file)
 
     if transcription_response.status == aai.TranscriptStatus.error:
@@ -102,8 +96,8 @@ demo = gr.Interface(
     fn=voice_to_voice,
     inputs=audio_input,
     outputs=[gr.Audio(label="Spanish"), gr.Audio(label="Arabic"), gr.Audio(label="Japanese")],
-    title="Simple Voice-to-Voice",
-    description="Voice-to-Voice demo",
+    title="Voice-to-Voice Translator",
+    description="Voice-to-Voice",
 )
 
 if __name__ == "__main__":
