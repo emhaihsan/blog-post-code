@@ -27,6 +27,7 @@ python app.py
 ## Project Structure
 
 - `app.py`: Main script that contains the code to set up and launch the Gradio interface.
+- `.env`: Environment file to store the Hugging Face API key.
 - `example/`: Directory containing example images.
 
 ## Code Explanation
@@ -52,4 +53,4 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-For any questions or suggestions, feel free to contact me at [your-email@example.com].
+For any questions or suggestions, feel free to contact me at emhihsan@gmail.com.
