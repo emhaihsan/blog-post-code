@@ -1,8 +1,6 @@
-# README.md
+# Chatbot with LangChain: GPT-4o Mini and Phi 3
 
-# Chatbot with LangChain: GPT-4o Mini and Ollama Phi 3
-
-This project demonstrates how to build chatbot applications using LangChain, integrating both paid and open-source large language models (LLMs). The examples include using GPT-4o Mini from OpenAI and Phi 3 from Ollama.
+This project demonstrates how to build chatbot applications using LangChain, integrating both paid and open-source large language models (LLMs). The examples include using GPT-4o Mini from OpenAI and Phi 3 .
 
 ## Introduction
 
@@ -30,3 +28,7 @@ Create a `.env` file in the project root and add your API keys:
 OPENAI_API_KEY=your_openai_api_key
 LANGCHAIN_API_KEY=your_langchain_api_key
 ```
+
+## Example
+![](https://github.com/emhaihsan/blog-post-code/blob/main/ollama/img/gpt.png)
+![](https://github.com/emhaihsan/blog-post-code/blob/main/ollama/img/phi.png)
