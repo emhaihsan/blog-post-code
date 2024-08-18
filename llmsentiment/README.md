@@ -1,6 +1,6 @@
 # Sentiment Analysis Web App with GPT-4-turbo and Streamlit
 
-This project is a simple web application that performs sentiment analysis on user-provided text using the GPT-4-turbo model from OpenAI. The web interface is built using Streamlit, a powerful and easy-to-use Python framework for creating interactive web apps.
+This project is a simple web application that performs sentiment analysis on user-provided text using the GPT model from OpenAI. The web interface is built using Streamlit, a powerful and easy-to-use Python framework for creating interactive web apps.
 
 ## Features
 
