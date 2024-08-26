@@ -1,10 +1,8 @@
-# logic.py
 import openai
 
 def generate_post(api_key, platform, topic, temperature, length, use_hashtags, use_emojis):
     try:
         client = openai.OpenAI(api_key=api_key)
-        # Create the prompt based on the user input
         prompt = f"Generate a {length} social media post for {topic} in {platform}."
         
         if use_hashtags:
